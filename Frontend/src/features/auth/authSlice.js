@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const loginUser = createAsyncThunk("auth/login", async (formData, thunkAPI) => {
   try {
-    const res = await axios.post("http://localhost:5000/api/login", formData, {
+    const res = await axios.post("http://localhost:5000/login", formData, {
       withCredentials: true,
     });
     return res.data; // { token, user }

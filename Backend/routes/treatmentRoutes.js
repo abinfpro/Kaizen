@@ -1,6 +1,6 @@
-import express from "express";
-import { getTreatments, addTreatment, deleteTreatment } from "../controllers/treatmentController.js";
-import { protect } from "../middleware/authMiddleware.js";
+const express = require("express")
+const { getTreatments, addTreatment, deleteTreatment } = require("../controllers/treatmentController.js")
+const { protect } = require("../middleware/authMiddleware.js")
 
 const router = express.Router();
 
